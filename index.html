@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YOUSSEF</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- start floating-arrow  -->
+  <div id="floating-arrow" onclick="goUp()">
+    <i class="fa-regular fa-circle-up fa-2x"></i>
+  </div>
+  <!-- end floating-arrow -->
+
+  <!-- start header  -->
+  <nav class="navbar navbar-expand-lg  fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#" id="navbar-brand">YOUSSEF</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#project">Portfolio</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--  end header -->
+
+  <!-- start landing section -->
+  <section class="landing" id="home">
+    <div class="container">
+      <div data-aos="fade-up" data-aos-duration="1300" class="box">
+        <h2>
+          HI!</h2>
+        <h1> I am Youssef Alsayed</h1>
+        <p>A Passionate FRONTEND WEB Developer 🚀 </p>
+        <a href="#project" type="button">
+          Visit My Works
+        </a>
+      </div>
+    </div>
+    <a href="#about" class="go-down">
+      <i class="fa-regular fa-circle-down fa-2x"></i>
+    </a>
+  </section>
+  <!--  end landing section-->
+
+  <!-- start About section -->
+  <section class="about" id="about">
+    <h1 class="main-title" data-aos="zoom-in">About Me</h1>
+    <div class="container">
+      <div class="image">
+        <img data-aos="fade-up" src="./imgs/WhatsApp Image 2024-03-12 at 21.10.11_3c3807fc.jpg" alt="person">
+      </div>
+      <div class="text">
+        <p data-aos="fade-left">Hi, I'm YOUSSEF, a front-end developer specializing in HTML, CSS, JavaScript, and
+          Bootstrap. I love creating
+          user-friendly interfaces and thrive on the challenge of bringing designs to life. With a passion for clean
+          code and innovation, I'm dedicated to crafting seamless digital experiences that leave a lasting impression.
+          Let's collaborate and build something awesome together!</p>
+        <li>
+          <i class="fa-brands fa-html5 fa-3x me-3" data-aos="fade-up" data-aos-duration="700"></i>
+          <i class="fa-brands fa-css3-alt fa-3x  me-3" data-aos="fade-up" data-aos-duration="800"></i>
+          <i class="fa-brands fa-js fa-3x  me-3" data-aos="fade-up" data-aos-duration="900"></i>
+          <i class="fa-brands fa-bootstrap fa-3x  me-3" data-aos="fade-up" data-aos-duration="1000"></i>
+        </li>
+        <button class=" btn mt-4" data-aos="zoom-in">Download CV<i class="fa-solid fa-download ms-2 mt-2"></i> </button>
+      </div>
+    </div>
+  </section>
+  <!--  end About section-->
+
+  <!-- start Skills section -->
+  <section class="our-skills" id="skills">
+    <h1 data-aos="zoom-in" class="main-title">Proficiency</h1>
+    <div class="container">
+      <div class="skills">
+        <div class="skill">
+          <h3>HTML <span>80%</span></h3>
+          <div class="the-progress">
+            <span style="width: 0" data-width="80%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>CSS <span>85%</span></h3>
+          <div class="the-progress">
+            <span style="width: 0" data-width="85%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript <span>70%</span></h3>
+          <div class="the-progress">
+            <span style="width: 0" data-width="70%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>Bootstrap <span>80%</span></h3>
+          <div class="the-progress">
+            <span style="width: 0" data-width="80%"></span>
+          </div>
+        </div>
+      </div>
+      <img src="imgs/skills.png" alt="" />
+    </div>
+  </section>
+  <!--  end Skills section-->
+
+  <!-- start Projects section -->
+  <section class="project" id="project">
+    <h1 class="main-title" data-aos="zoom-in">Projects</h1>
+    <div class="container">
+      <div class="cards-container">
+        <a href="https://youssefalsayed0.github.io/Shaghr/" target="_blank" previewlistener="true">
+          <div class="cards">
+            <div class="name">
+              <i data-aos="fade-up" class="fa-brands fa-github fa-2x"></i>
+              <p data-aos="fade-up">Shaghr
+              </p>
+            </div>
+            <div class="description">
+              <p data-aos="fade-up">Creating a user-friendly job portal connecting seekers with employers. Streamlining
+                recruitment with advanced search, resume management, and personalized recommendations."</p>
+            </div>
+            <div class="state">
+              <div class="left">
+                <span data-aos="fade-up">
+                  <i class="fa-solid fa-circle"></i>
+                  <p>HTML</p>
+                </span>
+                <span data-aos="fade-up">
+                  <i class="fa-solid fa-star"></i>
+                  <p>88</p>
+                </span>
+              </div>
+              <div data-aos="fade-up" class="right">
+                <p>25.5 MB</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://youssefalsayed0.github.io/LICERIA-CO/" target="_blank" previewlistener="true">
+          <div class="cards">
+            <div class="name">
+              <i data-aos="fade-up" class="fa-brands fa-github fa-2x"></i>
+              <p data-aos="fade-up">LICERIA-CO
+              </p>
+            </div>
+            <div class="description">
+              <p data-aos="fade-up">Developing an online makeup store with diverse cosmetic selections. Offering
+                seamless
+                browsing and secure transactions for beauty enthusiasts</p>
+            </div>
+            <div class="state">
+              <div class="left">
+                <span data-aos="fade-up">
+                  <i class="fa-solid fa-circle"></i>
+                  <p>HTML</p>
+                </span>
+                <span data-aos="fade-up">
+                  <i class="fa-solid fa-star"></i>
+                  <p>88</p>
+                </span>
+              </div>
+              <div data-aos="fade-up" class="right">
+                <p>25.5 MB</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://youssefalsayed0.github.io/Simple-Calculator/" target="_blank" previewlistener="true">
+          <div class="cards">
+            <div class="name">
+              <i data-aos="fade-up" class="fa-brands fa-github fa-2x"></i>
+              <p data-aos="fade-up">Simple-Calculator
+              </p>
+            </div>
+            <div class="description">
+              <p data-aos="fade-up">🚀 Simple Calculator project aims to develop a basic web-based calculator
+                application
+                using HTML, CSS, and JavaScript. </p>
+            </div>
+            <div class="state">
+              <div class="left">
+                <span data-aos="fade-up">
+                  <i class="fa-solid fa-circle"></i>
+                  <p>HTML</p>
+                </span>
+                <span data-aos="fade-up">
+                  <i class="fa-solid fa-star"></i>
+                  <p>88</p>
+                </span>
+              </div>
+              <div data-aos="fade-up" class="right">
+                <p>25.5 MB</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div data-aos="zoom-in" class="project-button"><a class="main-button" href="https://github.com/youssefalsayed0"
+          target="_blank" previewlistener="true">More Projects</a></div>
+    </div>
+  </section>
+  <!--  end Projects section-->
+
+  <!-- start Resume section -->
+  <section class="resume" id="resume">
+    <div class="container">
+      <div class="text" data-aos="fade-up">
+        <h2>Want to work with me?</h2>
+        <p>Always feel Free to Contact & Hire me</p>
+      </div>
+      <button data-aos="zoom-in">
+        Download CV<i class="fa-solid fa-download ms-2 mt-2"></i>
+      </button>
+    </div>
+  </section>
+  <!--  end Resume section-->
+
+  <!-- start Contact section -->
+  <section class="contact" id="contact">
+    <h1 class="main-title" data-aos="zoom-in">contact</h1>
+    <div class="container">
+      <div class="image " data-aos="fade-up">
+        <img src="./imgs/Untitled design.png" alt="">
+      </div>
+      <div class="text">
+        <h1 class="m-0" data-aos="fade-left">Reach Out to me!
+        </h1>
+        <p data-aos="fade-left">DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.
+        </p>
+        <div data-aos="fade-left">
+          <span class="me-3"><i class="fa-solid fa-location-dot me-2"></i>Fesal , Egypt</span>
+          <span><i class="fa-solid fa-phone me-2"></i>+201100760404</span>
+        </div>
+        <div class="social-icons mt-4 " data-aos="fade-up">
+          <a href="https://github.com/youssefalsayed0" target="_blank" previewlistener="true"><i
+              class="fa-brands fa-github  me-3 "></i></a>
+          <a href="https://www.linkedin.com/in/youssef-alsayed-908454288/" target="_blank" previewlistener="true"><i
+              class="fa-brands fa-linkedin me-3"></i></a>
+          <a href="https://www.facebook.com/youssef.elmehrzy" target="_blank" previewlistener="true"><i
+              class="fa-brands fa-facebook me-3"></i></a>
+          <a href="https://www.instagram.com/youssef.elmehrzy/" target="_blank" previewlistener="true"><i
+              class="fa-brands fa-instagram "></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  end Contact section-->
+
+  <!-- Start Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="box">
+        <h3>YOUSSEF</h3>
+        <ul class="social">
+          <li>
+            <a href="#" class="facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste aspernatur
+        </p>
+      </div>
+      <div class="box">
+        <ul class="links">
+          <li><a href="#home"> Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="line">
+          <i class="fas fa-map-marker-alt fa-fw"></i>
+          <div class="info">Egypt , Giza , Fisal</div>
+        </div>
+        <div class="line">
+          <i class="far fa-clock fa-fw"></i>
+          <div class="info">Business Hours: From 10:00 To 18:00</div>
+        </div>
+        <div class="line">
+          <i class="fas fa-phone-volume fa-fw"></i>
+          <div class="info">
+            <span>+201100760404</span>
+            <span>+201550929581</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="copyright">&copy; 2024 YOUSSEf All Right Reserved</p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="js/aos.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="js/all.min.js"></script> -->
+  <script src="js/main.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+
+</body>
+
+</html>
