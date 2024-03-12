@@ -184,6 +184,18 @@ ul {
   position: relative;
 }
 
+@media (max-width: 991px) {
+  .landing {
+    background-size: 1500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .landing {
+    background-size: 800px;
+  }
+}
+
 .landing .container {
   height: 100vh;
   display: flex;
@@ -199,7 +211,7 @@ ul {
 
 .landing .container .box h1 {
   margin: 0;
-  font-size: calc(16.5px + 4.5vw);
+  font-size: calc(26.5px + 4.5vw);
   font-weight: 700;
   color: var(--main-color-alt);
   margin-bottom: 5px;
@@ -209,7 +221,7 @@ ul {
 
 .landing .container .box h2 {
   margin: 0;
-  font-size: calc(16.5px + 4.5vw);
+  font-size: calc(20.5px + 4.5vw);
   font-weight: 700;
   color: rgb(68, 68, 68);
   margin-bottom: 5px;
@@ -218,7 +230,7 @@ ul {
 }
 
 .landing .container .box p {
-  font-size: calc(6.4px + 1.2vw);
+  font-size: calc(12.4px + 1.2vw);
   opacity: 0.8;
   margin-bottom: 20px;
 }
