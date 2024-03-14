@@ -8,11 +8,9 @@
 :root {
   --main-color: rgb(105, 90, 166);
   --main-color-alt: #212529;
-  --main-p-color: #494949;
   --main-transition: 0.3s;
   --main-padding: 60px;
   --section-background: #ffffff;
-  --transparent-color: rgba(173, 122, 255, 0.7);
 }
 
 html {
@@ -48,7 +46,6 @@ ul {
   text-transform: uppercase;
 }
 
-
 .main-title::after {
   position: absolute;
   content: "";
@@ -58,7 +55,8 @@ ul {
   bottom: -20px;
 }
 
-/* start components */
+
+/* end components */
 
 /* Start Animation */
 @keyframes floatAnimation {
@@ -100,15 +98,27 @@ ul {
   }
 }
 
-@keyframes moving-arrow {
-  100% {
-    transform: translateX(10px);
-  }
-}
-
 /* End Animation */
 
 
+/* start scrolbar */
+::-webkit-scrollbar {
+  width: 16PX;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f6f6f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:  rgb(248, 108, 58);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color:  var(--main-color);
+}
+
+/* end scrolbar */
 
 /* start floating btn */
 #floating-arrow {
@@ -236,13 +246,26 @@ ul {
 }
 
 .landing .container .box a {
-  position: relative;
   margin-top: 20px;
   border-radius: 20px;
   padding: 8px 15px;
   color: rgb(255, 255, 255);
-  background-color: rgb(105, 90, 166);
-  border-color: rgb(105, 90, 166);
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.landing .container .box a:hover {
+  color: var(--main-color);
+  background-color: white;
 }
 
 .landing .go-down {
@@ -277,7 +300,6 @@ ul {
 .about .container {
   display: flex;
   align-items: center;
-  overflow: hidden;
 }
 
 .about .container .image {
@@ -286,10 +308,13 @@ ul {
 
 .about .container .image img {
   width: 100%;
+  position: relative;
+  animation: up-and-down 5s linear infinite;
 }
 
 .about .container .text {
-  flex: 1
+  flex: 1;
+  overflow: hidden;
 }
 
 .about .container .text p {
@@ -332,7 +357,7 @@ ul {
   }
 
   .about .container .image {
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .about .container .text {
@@ -354,9 +379,29 @@ ul {
   align-items: center;
 }
 
+.our-skills .image {
+  max-width: 500px;
+}
+
+.our-skills .image img {
+  width: 100%;
+  position: relative;
+  animation: up-and-down 5s linear infinite;
+}
+
 @media (max-width: 991px) {
-  .our-skills img {
-    display: none;
+  .our-skills .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .our-skills .image {
+    max-width: 90%;
+  }
+
+  .our-skills .skills {
+    width: 100%;
   }
 }
 
@@ -424,11 +469,18 @@ ul {
 }
 
 .project .container .cards {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
   background-color: #fff;
-  box-shadow: 0 10px 30px -15px #0003;
+  border: 1px solid #eee;
   color: #586069;
   cursor: pointer;
   padding: 2rem;
+  box-shadow: 0 10px 30px -15px #0003;
   transition: all .3s ease;
 }
 
@@ -577,7 +629,6 @@ ul {
 .contact .container {
   display: flex;
   align-items: center;
-  overflow: hidden;
 }
 
 .contact .container .image {
@@ -586,6 +637,13 @@ ul {
 
 .contact .container .image img {
   width: 100%;
+  position: relative;
+  animation: up-and-down 5s linear infinite;
+}
+
+.contact .container .text {
+  overflow: hidden;
+  padding:0 5px;
 }
 
 .contact .container .text h1 {
@@ -594,7 +652,7 @@ ul {
 
 .contact .container .text p {
   font-size: 20px;
-  color: var(--main-p-color)
+  color: #494949;
 }
 
 .contact .container .text span {
