@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+.mf-cursor {
+  color: orangered;
+  z-index: 999;
+}
+
+
+
+
 :root {
   --main-color: rgb(105, 90, 166);
   --main-color-alt: #212529;
@@ -20,6 +28,7 @@ html {
 body {
   font-family: "Madimi One", sans-serif;
   font-style: normal;
+  position: relative;
 }
 
 a {
@@ -39,6 +48,7 @@ ul {
   color: var(--main-color);
   font-size: 45px;
   margin: 0px auto 100px;
+  width: fit-content;
   display: flex;
   align-items: center;
   position: relative;
@@ -54,7 +64,6 @@ ul {
   background: linear-gradient(to right, #f1a619, #fd6224, #9668ff, #5f1bff);
   bottom: -20px;
 }
-
 
 /* end components */
 
@@ -111,11 +120,11 @@ ul {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color:  rgb(248, 108, 58);
+  background-color: rgb(248, 108, 58);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color:  var(--main-color);
+  background-color: var(--main-color);
 }
 
 /* end scrolbar */
@@ -140,6 +149,10 @@ ul {
 /* end  floating btn*/
 
 /* start header section */
+.navbar {
+  z-index: 88;
+}
+
 .navbar-brand {
   font-size: 30px;
   font-weight: 700;
@@ -217,6 +230,10 @@ ul {
 .landing .container .box {
   text-align: center;
   width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .landing .container .box h1 {
@@ -226,18 +243,18 @@ ul {
   color: var(--main-color-alt);
   margin-bottom: 5px;
   position: relative;
-  display: block;
+  display: inline-block;
 }
 
 .landing .container .box h2 {
-  margin: 0;
   font-size: calc(20.5px + 4.5vw);
   font-weight: 700;
   color: rgb(68, 68, 68);
   margin-bottom: 5px;
   position: relative;
-  display: block;
+  display: inline-block;
 }
+
 
 .landing .container .box p {
   font-size: calc(12.4px + 1.2vw);
@@ -643,7 +660,7 @@ ul {
 
 .contact .container .text {
   overflow: hidden;
-  padding:0 5px;
+  padding: 0 5px;
 }
 
 .contact .container .text h1 {
