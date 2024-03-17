@@ -5,14 +5,6 @@
   box-sizing: border-box;
 }
 
-.mf-cursor {
-  color: orangered;
-  z-index: 999;
-}
-
-
-
-
 :root {
   --main-color: rgb(105, 90, 166);
   --main-color-alt: #212529;
@@ -44,6 +36,16 @@ ul {
 /* end Global Rules */
 
 /* start components */
+.mf-cursor {
+  color: orangered;
+}
+
+@media  (max-width: 767px) {
+  .mf-cursor {
+   display: none;
+  }
+}
+
 .main-title {
   color: var(--main-color);
   font-size: 45px;
