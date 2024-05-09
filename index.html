@@ -5,12 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>YOUSSEF</title>
-  <link rel="stylesheet" href="css/aos.css" />
-  <link rel="stylesheet" href="css/all.min.css" />
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/master.css" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/aos.css" />
   <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/master.css" />
   <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
@@ -22,7 +21,7 @@
     rel="stylesheet">
 </head>
 
-<body id="main">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
   <!-- start floating-arrow  -->
   <div id="floating-arrow" onclick="goUp()">
     <i class="fa-regular fa-circle-up fa-2x"></i>
@@ -39,7 +38,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a data-cursor-text="Home" class="nav-link" href="#">Home</a>
+          <a data-cursor-text="Home" class="nav-link" href="#home">Home</a>
           <a data-cursor-text="About" class="nav-link" href="#about">About</a>
           <a data-cursor-text="Skills" class="nav-link" href="#skills">Skills</a>
           <a data-cursor-text="project" class="nav-link" href="#project">Portfolio</a>
@@ -82,13 +81,17 @@
           code and innovation, I'm dedicated to crafting seamless digital experiences that leave a lasting impression.
           Let's collaborate and build something awesome together!</p>
         <li>
-          <i class="fa-brands fa-html5 fa-3x me-3" data-aos="fade-up" data-aos-duration="700"></i>
-          <i class="fa-brands fa-css3-alt fa-3x  me-3" data-aos="fade-up" data-aos-duration="800"></i>
-          <i class="fa-brands fa-js fa-3x  me-3" data-aos="fade-up" data-aos-duration="900"></i>
-          <i class="fa-brands fa-bootstrap fa-3x  me-3" data-aos="fade-up" data-aos-duration="1000"></i>
+          <i class="fa-brands fa-html5 fa-3x me-3" data-aos="fade-up" data-aos-duration="200"></i>
+          <i class="fa-brands fa-css3-alt fa-3x  me-3" data-aos="fade-up" data-aos-duration="300"></i>
+          <i class="fa-brands fa-js fa-3x  me-3" data-aos="fade-up" data-aos-duration="400"></i>
+          <i class="fa-brands fa-bootstrap fa-3x  me-3" data-aos="fade-up" data-aos-duration="500"></i>
         </li>
-        <button class=" btn mt-4" data-aos="zoom-in">Download CV<i class="fa-solid fa-download ms-2 mt-2"></i> </button>
+        <a href="./pdf/Resume-Youssef-Alsayed.pdf" download>
+          <button class=" btn mt-4" data-aos="zoom-in">Download CV<i class="fa-solid fa-download ms-2 mt-2"></i>
+          </button>
+        </a>
       </div>
+
     </div>
   </section>
   <!--  end About section-->
@@ -124,7 +127,7 @@
         </div>
       </div>
       <div class="image">
-        <img src="imgs/skills.png" alt="" data-aos="fade-up" />
+        <img src="imgs/skills.png" alt="skills" data-aos="fade-up" />
       </div>
     </div>
   </section>
@@ -135,15 +138,46 @@
     <h1 class="main-title" data-aos="zoom-in">Projects</h1>
     <div class="container">
       <div class="cards-container">
+        <!--  -->
+        <a href="https://youssefalsayed0.github.io/FOUNDER-M/" target="_blank" previewlistener="true"
+          data-aos="fade-up">
+          <div class="cards">
+            <div class="name">
+              <i class="fa-brands fa-github fa-2x"></i>
+              <p>FOUNDER-M
+              </p>
+            </div>
+            <div class="description">
+              <p data-cursor-img="./imgs/founder.png">Real Time Project for Trademark Registration institution </p>
+            </div>
+            <div class="state">
+              <div class="left">
+                <span data-aos="fade-up">
+                  <i class="fa-solid fa-circle"></i>
+                  <p>HTML</p>
+                </span>
+                <span data-aos="fade-up">
+                  <i class="fa-solid fa-star"></i>
+                  <p>1</p>
+                </span>
+              </div>
+              <div data-aos="fade-up" class="right">
+                <p>146 MB</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!--  -->
         <a href="https://youssefalsayed0.github.io/Shaghr/" target="_blank" previewlistener="true" data-aos="fade-up">
           <div class="cards">
             <div class="name">
               <i class="fa-brands fa-github fa-2x"></i>
-              <p >Shaghr
+              <p>Shaghr
               </p>
             </div>
             <div class="description">
-              <p data-cursor-img="./imgs/shaghr.png">Creating a user-friendly job portal connecting seekers with employers."</p>
+              <p data-cursor-img="./imgs/shaghr.png">Creating a user-friendly job portal connecting seekers with
+                employers."</p>
             </div>
             <div class="state">
               <div class="left">
@@ -153,25 +187,25 @@
                 </span>
                 <span data-aos="fade-up">
                   <i class="fa-solid fa-star"></i>
-                  <p>88</p>
+                  <p>1</p>
                 </span>
               </div>
               <div data-aos="fade-up" class="right">
-                <p>25.5 MB</p>
+                <p>26.5 MB</p>
               </div>
             </div>
           </div>
         </a>
-        <a href="https://youssefalsayed0.github.io/LICERIA-CO/" target="_blank" previewlistener="true"
-          data-aos="fade-up">
+        <!--  -->
+        <a href="https://youssefalsayed0.github.io/DevFolio/" target="_blank" previewlistener="true" data-aos="fade-up">
           <div class="cards">
             <div class="name">
               <i class="fa-brands fa-github fa-2x"></i>
-              <p >LICERIA-CO
+              <p>DevFolio
               </p>
             </div>
             <div class="description">
-              <p data-cursor-img="./imgs/liceria.png">Landing Page For online makeup store with diverse cosmetic selections. </p>
+              <p data-cursor-img="./imgs/devfolio.png"> Simple Portfolio Using Bootstrap and Fully Responsive </p>
             </div>
             <div class="state">
               <div class="left">
@@ -181,56 +215,25 @@
                 </span>
                 <span data-aos="fade-up">
                   <i class="fa-solid fa-star"></i>
-                  <p>88</p>
+                  <p>1</p>
                 </span>
               </div>
               <div data-aos="fade-up" class="right">
-                <p>25.5 MB</p>
+                <p>5.10 MB</p>
               </div>
             </div>
           </div>
         </a>
-        <a href="https://youssefalsayed0.github.io/Simple-Calculator/" target="_blank" previewlistener="true"
-          data-aos="fade-up">
+        <!--  -->
+        <a href="https://youssefalsayed0.github.io/Foker/" target="_blank" previewlistener="true" data-aos="fade-up">
           <div class="cards">
             <div class="name">
               <i class="fa-brands fa-github fa-2x"></i>
-              <p >Simple-Calculator
+              <p>Fokir
               </p>
             </div>
             <div class="description">
-              <p data-cursor-img="./imgs/calculator.png">🚀 Simple Calculator project aims to develop a basic web-based calculator
-                application
-                using HTML, CSS, and JavaScript. </p>
-            </div>
-            <div class="state">
-              <div class="left">
-                <span data-aos="fade-up">
-                  <i class="fa-solid fa-circle"></i>
-                  <p>HTML</p>
-                </span>
-                <span data-aos="fade-up">
-                  <i class="fa-solid fa-star"></i>
-                  <p>88</p>
-                </span>
-              </div>
-              <div data-aos="fade-up" class="right">
-                <p>25.5 MB</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://youssefalsayed0.github.io/TRAVEL-AGENCY/" target="_blank" previewlistener="true"
-          data-aos="fade-up">
-          <div class="cards">
-            <div class="name">
-              <i class="fa-brands fa-github fa-2x"></i>
-              <p >Travel Agency
-              </p>
-            </div>
-            <div class="description">
-              <p data-cursor-img="./imgs/travel agency.png" >Travel Agency Landing Page
-                using HTML, CSS, JS and BOOTSTRAB . </p>
+              <p data-cursor-img="./imgs/foker.png">One page Portfolio Using Html , Css , Js , Bootstrap </p>
             </div>
             <div class="state">
               <div class="left">
@@ -240,47 +243,75 @@
                 </span>
                 <span data-aos="fade-up">
                   <i class="fa-solid fa-star"></i>
-                  <p>78</p>
+                  <p>1</p>
                 </span>
               </div>
               <div data-aos="fade-up" class="right">
-                <p>12.5 MB</p>
+                <p>5 MB</p>
               </div>
             </div>
           </div>
         </a>
-        <a href="https://youssefalsayed0.github.io/Simple-landing-page-/" target="_blank" previewlistener="true"
-          data-aos="fade-up">
+        <!--  -->
+        <a href="https://youssefalsayed0.github.io/Mealify/" target="_blank" previewlistener="true" data-aos="fade-up">
           <div class="cards">
             <div class="name">
               <i class="fa-brands fa-github fa-2x"></i>
-              <p >Simble Landing Page
+              <p>Mealify
               </p>
             </div>
             <div class="description">
-              <p data-cursor-img="./imgs/landing.png">🚀 Simble Landing Page
-                using HTML, CSS, JS and BOOTSTRAB . </p>
+              <p data-cursor-img="./imgs/mealify.png">Restaurant Site made by Html , Css and Fully Responsive</p>
             </div>
             <div class="state">
               <div class="left">
                 <span data-aos="fade-up">
                   <i class="fa-solid fa-circle"></i>
-                  <p>HTML</p>
+                  <p>CSS</p>
                 </span>
                 <span data-aos="fade-up">
                   <i class="fa-solid fa-star"></i>
-                  <p>88</p>
+                  <p>1</p>
                 </span>
               </div>
               <div data-aos="fade-up" class="right">
-                <p>25.5 MB</p>
+                <p>6 MB</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!--  -->
+        <a href="https://youssefalsayed0.github.io/Engage-Business/" target="_blank" previewlistener="true"
+          data-aos="fade-up">
+          <div class="cards">
+            <div class="name">
+              <i class="fa-brands fa-github fa-2x"></i>
+              <p>Engage-Business
+              </p>
+            </div>
+            <div class="description">
+              <p data-cursor-img="./imgs/engage.png">Landing Page To Show The Power Of Media Queries</p>
+            </div>
+            <div class="state">
+              <div class="left">
+                <span data-aos="fade-up">
+                  <i class="fa-solid fa-circle"></i>
+                  <p>Css</p>
+                </span>
+                <span data-aos="fade-up">
+                  <i class="fa-solid fa-star"></i>
+                  <p>1</p>
+                </span>
+              </div>
+              <div data-aos="fade-up" class="right">
+                <p>5 MB</p>
               </div>
             </div>
           </div>
         </a>
       </div>
-      <div data-aos="zoom-in" class="project-button"><a class="main-button" href="https://github.com/youssefalsayed0"
-          target="_blank" previewlistener="true">More Projects</a></div>
+      <div data-aos="zoom-in" class="project-button"><a class="main-button" href="./projects.html"
+          previewlistener="true">More Projects</a></div>
     </div>
   </section>
   <!--  end Projects section-->
@@ -293,7 +324,8 @@
         <p>Always feel Free to Contact & Hire me</p>
       </div>
       <button data-aos="zoom-in">
-        Download CV<i class="fa-solid fa-download ms-2 mt-2"></i>
+        <a href="./pdf/Resume-Youssef-Alsayed.pdf" download>Download CV<i
+            class="fa-solid fa-download ms-2 mt-2"></i></a>
       </button>
     </div>
   </section>
@@ -304,7 +336,7 @@
     <h1 class="main-title" data-aos="zoom-in">contact</h1>
     <div class="container">
       <div class="image " data-aos="fade-up">
-        <img src="./imgs/Untitled design.png" alt="">
+        <img src="./imgs/Untitled design.png" alt="profile image">
       </div>
       <div class="text">
         <h1 class="m-0" data-aos="fade-left">Reach Out to me!
@@ -313,7 +345,7 @@
         </p>
         <div data-aos="fade-left">
           <span class="me-3"><i class="fa-solid fa-location-dot me-2"></i>Fesal , Egypt</span>
-          <span><i class="fa-solid fa-phone me-2"></i>+201100760404</span>
+          <span><i class="fa-solid fa-phone me-2"></i><a href="tel:01100760404">+201100760404</a></span>
         </div>
         <div class="social-icons mt-4 " data-aos="fade-up">
           <a href="https://github.com/youssefalsayed0" target="_blank" previewlistener="true"><i
@@ -337,23 +369,29 @@
         <h3>YOUSSEF</h3>
         <ul class="social">
           <li>
-            <a href="#" class="facebook">
+            <a href="https://www.facebook.com/youssef.elmehrzy" class="facebook" target="_blank">
               <i class="fab fa-facebook-f"></i>
             </a>
           </li>
           <li>
-            <a href="#" class="twitter">
-              <i class="fab fa-twitter"></i>
+            <a href="https://www.instagram.com/youssef.elmehrzy/" class="instagram" target="_blank">
+              <i class="fab fa-instagram"></i>
             </a>
           </li>
           <li>
-            <a href="#" class="youtube">
-              <i class="fab fa-youtube"></i>
+            <a href="https://www.linkedin.com/in/youssef-alsayed-908454288/" class="linkedin" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/youssefalsayed0" class="github" target="_blank">
+              <i class="fab fa-github"></i>
             </a>
           </li>
         </ul>
         <p class="text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste aspernatur
+          Explore my work and let's create something amazing together! Contact me to discuss your project ideas and
+          bring your vision to life.
         </p>
       </div>
       <div class="box">
@@ -361,7 +399,7 @@
           <li><a href="#home"> Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#project">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -372,14 +410,18 @@
         </div>
         <div class="line">
           <i class="far fa-clock fa-fw"></i>
-          <div class="info">Business Hours: From 10:00 To 18:00</div>
+          <div class="info">Business Hours: From 1:00 PM To 10:00 PM</div>
         </div>
         <div class="line">
           <i class="fas fa-phone-volume fa-fw"></i>
           <div class="info">
-            <span>+201100760404</span>
-            <span>+201550929581</span>
+            <span><a href="tel:01100760404">+20 1100760404</a></span>
+            <span><a href="tel:01550929581">+20 1550929581</a></span>
           </div>
+        </div>
+        <div class="line">
+          <i class="fas fa-envelope fa-fw"></i>
+          <div class="info"><a href="mailto:youssef.elmehrzy0@gmail.com">youssef.elmehrzy0@gmail.com</a></div>
         </div>
       </div>
     </div>
@@ -389,13 +431,8 @@
   <!-- End Footer -->
   <script src="js/aos.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="js/all.min.js"></script> -->
   <script src="js/main.js"></script>
-  <script>
-    AOS.init({
-      easing: 'ease-in-out-sine'
-    });
-  </script>
+
 </body>
 
 </html>

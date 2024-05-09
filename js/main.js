@@ -9,8 +9,10 @@ window.onscroll = function () {
     document.documentElement.scrollTop > 100
   ) {
     navigation.style.backgroundColor = "white";
+    navigation.style.boxShadow = "0px 2px 15px rgba(0, 0, 0, 0.11)";
   } else {
     navigation.style.backgroundColor = "";
+    navigation.style.boxShadow = "none";
   }
 
   if (
@@ -36,6 +38,13 @@ function goUp() {
     behavior: "smooth",
   });
 }
+
+/* aos library*/ 
+AOS.init({
+  easing: 'ease-in-out-sine',
+  once: true,
+});
+/*aos library*/ 
 
 const cursor = new MouseFollower({
   el: null,
